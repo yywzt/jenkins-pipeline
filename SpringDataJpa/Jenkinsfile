@@ -24,8 +24,8 @@ pipeline {
                             configName: 'centos002',
                             transfers:[
                                 sshTransfer(
-                                    sourceFiles: 'target/*.jar',
-                                    removePrefix: 'target/*.jar',
+                                    sourceFiles: 'SpringDataJpa/target/*.jar',
+                                    removePrefix: 'SpringDataJpa/target/*.jar',
                                     remoteDirectory: '/yw/jar/',
                                     execCommand: 'echo "build success"',
                                     remoteDirectorySDF: false,
